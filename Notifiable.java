@@ -1,6 +1,8 @@
 public interface Notifiable {
 
-    void notifOn ();
+    void notifyOn ();
 
     void notifyOff();
+
+    void notifyStatus();
 }

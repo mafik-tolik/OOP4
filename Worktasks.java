@@ -40,4 +40,9 @@ public class Worktasks extends Tasks implements Notifiable {
             System.out.println("Нотификация выключена");
         }
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "[notify=" + notify + "] ";
+    }
 }

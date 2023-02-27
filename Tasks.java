@@ -2,10 +2,6 @@ import java.util.Date;
 
 public abstract class Tasks {
 
-    enum Priority {
-        high, medium, low, notSet
-    }
-
     private static int defaultIndex;
     static {
         defaultIndex = 1;
@@ -79,7 +75,7 @@ public abstract class Tasks {
 
     @Override
     public String toString() {
-        return "Tasks [id=" + id + ", theme=" + theme + ", startDate=" + startDate + ", finishtDate=" + finishtDate
-                + ", comment=" + comment + ", responsible=" + responsible + ", priority=" + priority + "]";
+        return "[id=" + id + ", theme=" + theme + ", startDate=" + startDate + ", finishtDate=" + finishtDate
+                + ", comment=" + comment + ", responsible=" + responsible + ", priority=" + priority + "] ";
     }
 }

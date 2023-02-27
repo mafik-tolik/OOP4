@@ -13,8 +13,12 @@ public class Calendar<T extends Tasks> {
         tasks.add(someTask);
     }
 
-    public void removeTask(T someTask) {
-        tasks.remove(someTask);
+    public void removeTask(String theme) {
+        for (T item : tasks) {
+            if (item.getTheme().equals(theme)) {
+                tasks.remove(item);
+            }
+        }
     }
 
     public List<T> getTasks() {
